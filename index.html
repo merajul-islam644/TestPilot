@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#131422" />
+    <title>TestPilot</title>
+    <script>
+      (function () {
+        try {
+          var stored = window.localStorage.getItem("testpilot:theme");
+          var mode = stored === "light" ? "light" : "dark";
+          var root = document.documentElement;
+          root.classList.toggle("light", mode === "light");
+          root.style.colorScheme = mode;
+        } catch (_) {
+          /* localStorage may be unavailable; default dark theme already applied via :root */
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

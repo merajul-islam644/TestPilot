@@ -1,0 +1,17 @@
+{
+  "project": {
+    "tenantId": "D21cf94e9f1134ff28aff6d8f3f5b8eb1",
+    "apiUrl": "https://blocksapi.dev.slsblx.com",
+    "appDomain": "https://D21cf94e9f1134ff28aff6d8f3f5b8eb1-f1c44427-f070-43f3-b271-cfd3f2ddc371.slsblx.com"
+  },
+  "data": {
+    "schemas": "blocks/data/schemas",
+    "rules": "blocks/data/rules.json"
+  },
+  "repo": {
+    "branch": "dev",
+    "fullName": "merajul-islam644/TestPilot",
+    "provider": "github",
+    "url": "https://github.com/merajul-islam644/TestPilot"
+  }
+}
